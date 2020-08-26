@@ -1,0 +1,17 @@
+.course-data {
+    background: yellowgreen;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 ;
+}
+.course-data .enroll-btn{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

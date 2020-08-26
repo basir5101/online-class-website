@@ -1,0 +1,6 @@
+.main-content{
+  display: flex;
+}
+.main-content .courses{
+  width: 70%;
+}
