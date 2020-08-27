@@ -17,12 +17,12 @@ function App() {
   return (
 
     <div className="contents">
-      <h2>The Ultimate Crash Course</h2>
+      <h2>The Ultimate Crash Courses</h2>
       <hr/>
       <div className="main-content">
         <div className = 'courses'>
           {
-            courseInformation.map( course => <Courses handleAddClick = {handleAddCourse} course = {course}></Courses>)
+            courseInformation.map( course => <Courses key = {course.id} handleAddClick = {handleAddCourse} course = {course}></Courses>)
           }
         </div>
 

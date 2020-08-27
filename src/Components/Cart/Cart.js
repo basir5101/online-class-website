@@ -10,7 +10,6 @@ const Cart = (props) => {
         const coursePrice = course.price;
              totalCost = totalCost + coursePrice 
     }
-    console.log(cart)
     return (
         <div>
             <table class="table table-dark table-striped table-bordered">
@@ -22,9 +21,9 @@ const Cart = (props) => {
                 </thead>
                 <tbody>
                     {
-                        cart.map(cr => <tr>
-                            <td>{cr.name}</td>
-                            <td>${cr.price}</td>
+                        cart.map(course => <tr>
+                                <td>{course.name}</td>
+                                <td>${course.price}</td>
                             </tr> )
                     }
                     <tr className = 'bg-warning'>

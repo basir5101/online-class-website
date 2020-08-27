@@ -16,10 +16,11 @@
 }
 .cart{
   background: blue;
-  width: 45%;
+  width: 48%;
   padding: 20px;
   border-radius: 10px;
   color: white;
   left: 50%;
   position: absolute;
+  margin-top: 20px;
 }
