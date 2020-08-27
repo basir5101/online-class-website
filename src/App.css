@@ -1,6 +1,25 @@
+.contents{
+  text-align: center;
+}
+.contents hr{
+  background: #03daf7;
+  border: none;
+  height: 3px;
+  width: 50%;
+  border-radius: 50%;
+}
 .main-content{
   display: flex;
 }
 .main-content .courses{
-  width: 70%;
+  width: 50%;
+}
+.cart{
+  background: blue;
+  width: 45%;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  left: 50%;
+  position: absolute;
 }

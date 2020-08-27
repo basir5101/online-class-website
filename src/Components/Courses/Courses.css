@@ -4,14 +4,15 @@
     margin: 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 0 ;
+    text-align: center;
 }
-.course-data .enroll-btn{
-    padding: 12px 18px;
+.course-name{
+    color: #56009c;
+}
+.course-data hr{
+    background: #f33d3d;
+    height: 2px;
+    width: 30%;
     border: none;
-    border-radius: 5px;
-    background: green;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    border-radius: 50%;
 }

@@ -15,18 +15,23 @@ function App() {
   }
 
   return (
-    <div className="main-content">
 
-      <div className = 'courses'>
-        {
-          courseInformation.map( course => <Courses handleAddClick = {handleAddCourse} course = {course}></Courses>)
-        }
-      </div>
+    <div className="contents">
+      <h2>The Ultimate Crash Course</h2>
+      <hr/>
+      <div className="main-content">
+        <div className = 'courses'>
+          {
+            courseInformation.map( course => <Courses handleAddClick = {handleAddCourse} course = {course}></Courses>)
+          }
+        </div>
 
-      <div className = 'cart'>
-        <h3>Course enrolled: {cart.length}</h3>
-        <Cart cart = {cart}></Cart>
+        <div className = 'cart'>
+          <h3>Course enrolled: {cart.length}</h3>
+          <Cart cart = {cart}></Cart>
+        </div>
       </div>
+      
 
     </div>
   );

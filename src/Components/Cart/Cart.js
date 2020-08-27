@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Cart.css'
 const Cart = (props) => {
     const cart = props.cart
     
@@ -10,11 +10,32 @@ const Cart = (props) => {
         const coursePrice = course.price;
              totalCost = totalCost + coursePrice 
     }
+    console.log(cart)
     return (
         <div>
-            <h4>Order summery</h4> 
-            <p>Total Cost: {totalCost}</p>        
+            <table class="table table-dark table-striped table-bordered">
+                <thead className = 'bg-info'>
+                    <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        cart.map(cr => <tr>
+                            <td>{cr.name}</td>
+                            <td>${cr.price}</td>
+                            </tr> )
+                    }
+                    <tr className = 'bg-warning'>
+                        <td>Total Cost</td>
+                        <td>${totalCost}</td>
+                    </tr>                  
+                </tbody>
+            </table> 
+            <button className = 'btn btn-success'>Make Payment</button>    
         </div>
+        
     );
 };
 
